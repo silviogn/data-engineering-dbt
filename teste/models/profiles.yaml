@@ -1,0 +1,15 @@
+# Modify the project name
+dbt_test:
+  outputs:
+    dev:
+      type: postgres
+      host: localhost        # or your database host
+      user: my_user
+      password: my_password
+      port: 5432
+      dbname: my_database
+      schema: analytics      # the schema dbt will build models into
+      threads: 4    
+  target: dev
+  
+    
