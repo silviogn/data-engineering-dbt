@@ -1,0 +1,14 @@
+my_postgres_profile:  # You can name this whatever you want
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost       # Replace with your host
+      user: postgres   # Replace with your Postgres username
+      password: postgres  # Replace with your Postgres password
+      port: 5432
+      dbname: postgres   # Replace with your database name
+      schema: analytics       # Replace with your target schema
+      threads: 4
+      keepalives_idle: 0     # Optional
+      sslmode: prefer        # Optional

@@ -1,0 +1,33 @@
+# dbt build artifacts
+dbt_packages/
+target/
+dbt_modules/
+logs/
+
+# MacOS system files
+.DS_Store
+
+# Python virtual environments
+.env/
+.venv/
+venv/
+
+# VSCode config
+.vscode/
+
+# Jupyter Notebooks (optional)
+.ipynb_checkpoints/
+
+# IDE and OS clutter
+*.pyc
+__pycache__/
+
+# Sensitive files (be careful)
+profiles.yml  # Only if it's in the repo (not recommended)
+
+# Optional: compiled docs
+dbt_project/target/
+
+# If you use dbt Cloud, ignore dbt Cloud-specific files
+.dbt/
+dbt_internal_packages/
